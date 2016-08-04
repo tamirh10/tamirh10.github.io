@@ -1,0 +1,4 @@
+git init
+git remote add origin https://github.com/tamirh10/tamirh10.github.io.git
+git add .
+git commit -m "Save my work"
