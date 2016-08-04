@@ -1,0 +1,519 @@
+.link{
+    text-align: left;
+}
+html, body {
+    color: #434242;
+    font-family: "Open Sans",sans-serif !important;
+    height: 100%;
+}
+body {
+    background: #f3efe0 none repeat scroll 0 0;
+    font-size: 15px;
+    line-height: 1.64;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+    font-family: "Open Sans",sans-serif !important;
+    margin-bottom: 20px;
+    text-align: right;
+}
+h1, h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+h2, h3 {
+    color: #22a39f;
+    font-weight: 300;
+    text-align: center;
+}
+h2 {
+    font-size: 54px;
+    text-align: center;
+}
+h3 {
+    font-size: 28px;
+}
+p.lead {
+    color: #727878;
+    text-align: center;
+}
+p.lead a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+p.lead a:hover {
+    text-decoration: none;
+}
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+hr {
+    border-color: #727878;
+    margin: 40px 0;
+    opacity: 0.2;
+}
+.project-referal {
+    margin-top: 40px;
+}
+.project-referal p {
+    color: #999999;
+    font-style: italic;
+}
+.btn-primary {
+    background-color: #22a39f;
+    border-color: #1c8784;
+}
+.btn-primary:hover {
+    background-color: #1c8784;
+    border-color: #1c8784;
+}
+.icon {
+    background: rgba(0, 0, 0, 0) url("images/sm_icon_sprite.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+}
+.icon.icon-twitter {
+    background-position: 0 0;
+}
+.icon.icon-linkedin {
+    background-position: 0 -32px;
+}
+.icon.icon-skype {
+    background-position: 0 -64px;
+}
+.icon.icon-email {
+    background-position: 0 -96px;
+}
+.jumbotron {
+    background: rgba(0, 0, 0, 0) url("../images/background3.jpg") no-repeat fixed right center / cover ;
+    margin-bottom: 0;
+    padding: 0;
+}
+.jumbotron .overlay {
+    background-color: #22a39f;
+    bottom: 0;
+    left: 0;
+    opacity: 0.75;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.jumbotron .container {
+    position: relative;
+    text-align: center;
+    top: 28%;
+    z-index: 4;
+}
+.jumbotron .container > * {
+    color: #ffffff;
+    text-align: center;
+}
+.jumbotron .container h1 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.jumbotron .container .lead {
+    font-size: 28px;
+}
+.jumbotron .scroll-down {
+    background-color: #222222;
+    bottom: 0;
+    display: block;
+    height: 80px;
+    position: absolute;
+    right: 46.5%;
+    text-align: center;
+    width: 110px;
+    z-index: 6;
+}
+.jumbotron .scroll-down .glyphicon {
+    animation-direction: normal;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-name: wiggle;
+    animation-timing-function: linear;
+    color: #ffffff;
+    font-size: 30px;
+    padding-right: 2px;
+    padding-top: 20px;
+}
+.jumbotron .scroll-down:hover .glyphicon {
+    padding-top: 25px;
+}
+.navbar {
+    background-color: #222222;
+    border: 0 none;
+    position: absolute;
+    right: 5%;
+    top: 100%;
+    width: 110px;
+    z-index: 999;
+}
+.navbar .navbar-collapse {
+    max-height: none;
+    padding: 0;
+}
+.navbar .navbar-nav {
+    float: none;
+}
+.navbar-nav {
+    margin: 0;
+}
+.navbar .nav > li {
+    display: block;
+    float: none;
+    height: 80px;
+}
+.navbar .nav > li a {
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+}
+.navbar .nav > li a:hover, .navbar .nav > li a:focus {
+    color: #999999;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: #22a39f none repeat scroll 0 0;
+    color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover .icon-bar, .navbar-default .navbar-toggle:focus .icon-bar {
+    background: #222222 none repeat scroll 0 0;
+}
+.fixed .navbar {
+    position: fixed;
+    top: 60px;
+}
+.background-white {
+    background: #ffffff none repeat scroll 0 0;
+}
+.background-gray {
+    background: #434242 none repeat scroll 0 0;
+}
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+#profile .row > div {
+    margin-bottom: 20px;
+    text-align: right;
+}
+#profile .row > div img {
+    height: auto;
+    max-width: 246px;
+    width: 100%;
+}
+#experiences .experience {
+    margin-bottom: 20px;
+    text-align: right;
+}
+#experiences .experience p > strong {
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    text-align: right;
+}
+#experiences .experience .experience-details {
+    display: block;
+    margin-top: 6px;
+}
+#experiences .experience .experience-details * {
+    color: #22a39f;
+}
+#experiences .experience .experience-details .seperator {
+    color: #bcbcbc;
+}
+#abilities ul > li {
+    min-height: 30px;
+    padding: 3px 0;
+}
+#abilities ul > li:hover {
+    background: #f2f2f2 none repeat scroll 0 0;
+}
+#abilities ul > li .ability-title {
+    display: inline-block;
+    width: 60%;
+    text-align: right;
+}
+#abilities ul > li .ability-score {
+    float: left;
+}
+#abilities ul > li .ability-score .glyphicon {
+    color: #dfe0e0;
+    font-size: 14px;
+    transition: all 0.3s ease 0s;
+}
+#abilities ul > li .ability-score .glyphicon.filled {
+    color: #22a39f;
+}
+#abilities ul > li:hover .ability-score .glyphicon {
+    margin-left: 2px;
+}
+#interests .left {
+    float: left;
+}
+#interests .right {
+    float: right;
+}
+#interests img {
+    height: auto;
+    width: 80%;
+}
+#interests .right img {
+    float: right;
+}
+#interests .interest-content {
+    padding: 40px 0;
+}
+#interests .row:hover .left img {
+    transform: rotate(-12deg);
+}
+#interests .row:hover .right img {
+    transform: rotate(12deg);
+}
+#projects .row > div {
+    margin-bottom: 30px;
+}
+#projects figure {
+    overflow: hidden;
+    position: relative;
+}
+#projects figure h3 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+#projects figure p > strong {
+    display: inline-block;
+    margin: 0;
+    width: 60px;
+}
+#projects figure img {
+    width: 110%;
+}
+#projects figure figcaption {
+    height: 100%;
+    left: 0;
+    padding: 20px 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#projects figure a {
+    font-size: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-indent: 200%;
+    top: 0;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1000;
+}
+#projects figure .icon {
+    background: #22a39f none repeat scroll 0 0;
+    height: 48px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px;
+}
+#projects figure .icon span {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px;
+}
+#contact {
+    padding-bottom: 200px;
+}
+#contact h2, #contact .row * {
+    color: #ffffff;
+}
+#contact a {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+#contact a .icon {
+    float: left;
+    margin-right: 20px;
+}
+#contact a:hover {
+    opacity: 1;
+    text-decoration: none;
+}
+.opl {
+    left: 0;
+    position: absolute;
+    top: 100px;
+    z-index: 99999;
+}
+.opl a {
+    background: rgba(0, 0, 0, 0) url("https://s3.amazonaws.com/onepagelove/one-page-love-award.png") no-repeat scroll 0 0;
+    display: block;
+    height: 56px;
+    text-indent: -9999px;
+    width: 73px;
+}
+@media (max-width: 1200px) {
+#interests .interest-content {
+    padding: 20px 0;
+}
+}
+@media (max-width: 767px) {
+.jumbotron::before {
+    bottom: 100px;
+    left: 20px;
+    right: 20px;
+    top: 20px;
+}
+.jumbotron .container {
+    padding-top: 0;
+    top: 20%;
+}
+.jumbotron .scroll-down {
+    right: 0;
+    width: 100%;
+}
+.navbar {
+    left: 0;
+    width: 100%;
+}
+.navbar .nav > li {
+    height: 60px;
+}
+.navbar .nav > li a {
+    color: #ffffff;
+    font-weight: 600;
+    height: 60px;
+    padding-top: 20px;
+    text-align: center;
+}
+.fixed .navbar {
+    top: 0;
+}
+.container {
+    min-width: 280px;
+    padding: 60px 20px;
+}
+.hidden-phone {
+    display: none;
+}
+#profile .row * {
+    text-align: center;
+}
+#experiences .experience .experience-details > span {
+    display: block;
+    margin-bottom: 6px;
+}
+#experiences .experience .experience-details .seperator {
+    display: none;
+}
+#interests .left {
+    float: none;
+}
+#interests .right {
+    float: none;
+}
+#interests > * {
+    text-align: center;
+}
+#interests img {
+    float: none !important;
+    height: auto;
+    width: 50%;
+}
+#interests .interest-content {
+    padding: 20px 0;
+}
+#contact {
+    padding-bottom: 60px;
+}
+#contact a .icon {
+    float: left;
+    margin-right: 10px;
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+.jumbotron {
+    background-attachment: scroll;
+}
+}
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+.jumbotron {
+    background-attachment: scroll;
+}
+.jumbotron .lead {
+    display: none;
+}
+}
+@keyframes wiggle {
+0% {
+    padding-top: 20px;
+}
+50% {
+    padding-top: 28px;
+}
+100% {
+    padding-top: 20px;
+}
+}
+figure.effect {
+    background: #22a39f none repeat scroll 0 0;
+    color: #fff;
+}
+figure.effect img {
+    backface-visibility: hidden;
+    transform: translate3d(-10px, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+    width: calc(100% + 20px);
+}
+figure.effect:hover img {
+    opacity: 0.2;
+    transform: translate3d(0px, 0px, 0px);
+}
+figure.effect figcaption {
+    text-align: left;
+}
+figure.effect h3 {
+    opacity: 0;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: relative;
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+figure.effect:hover h3 {
+    opacity: 1;
+}
+figure.effect h3::after {
+    background: #fff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: translate3d(-100%, 0px, 0px);
+    transition: transform 0.35s ease 0s;
+    width: 100%;
+}
+figure.effect:hover h3::after {
+    transform: translate3d(0px, 0px, 0px);
+}
+figure.effect p {
+    opacity: 0;
+    padding-top: 10px;
+    transform: translate3d(100%, 0px, 0px);
+    transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
+}
+figure.effect:hover p {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
