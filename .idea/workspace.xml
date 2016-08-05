@@ -31,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="1216" column="20" selection-start-line="1216" selection-start-column="20" selection-end-line="1216" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="1185" column="0" selection-start-line="1185" selection-start-column="0" selection-end-line="1185" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -291,7 +291,7 @@
       <workItem from="1470310685838" duration="16735000" />
       <workItem from="1470330323463" duration="3378000" />
       <workItem from="1470336869124" duration="3180000" />
-      <workItem from="1470353590569" duration="17608000" />
+      <workItem from="1470353590569" duration="17687000" />
     </task>
     <task id="LOCAL-00001" summary="wqeqwe">
       <created>1470358931440</created>
@@ -328,14 +328,21 @@
       <option name="project" value="LOCAL" />
       <updated>1470407892897</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="wqeqwesdfgdfgdfss">
+      <created>1470407935832</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1470407935832</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44212000" />
+    <option name="totallyTimeSpent" value="44291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -771,8 +778,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="1216" column="20" selection-start-line="1216" selection-start-column="20" selection-end-line="1216" selection-end-column="20" />
+        <state relative-caret-position="102">
+          <caret line="1185" column="0" selection-start-line="1185" selection-start-column="0" selection-end-line="1185" selection-end-column="0" />
           <folding />
         </state>
       </provider>
