@@ -1,7 +1,7 @@
 <!--Ctrl+Alt+L-->
 <!--ctrl+/-->
 <!--<img class ="img-responsive" src="view/images/3_foot_flat_cable-wallpaper-1920x1080.jpg">  responsive image-->
-
+var map=null;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +14,26 @@
     <link rel="stylesheet" href="view/css/animate.css">
     <link rel="stylesheet" href="view/css/app.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="view/css/BootStrapProject.css">
+    <link rel="stylesheet" href="view/galleria/themes/classic/galleria.classic.css">
+    <script src="view/js/jquery-2.1.1.min.js"></script>
+    <script src="view/galleria/galleria-1.4.2.min.js"></script>
+
+    <style>
+        #map {
+            width: 50%;
+            height: 50%;
+            margin-left: 25%;
+        }
+    </style>
+
+
+
+
 
 </head>
 
 <body>
-
 <header id="video-wallpaper">
     <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
         <div class="container-fluid">
@@ -52,6 +67,7 @@
 
 <div class="container-fluid">
 
+
     <section id="Top" class="row title-row" style="">
         <div class="fill-screen stellar-bg "
              style="background-image: url(view/images/3_foot_flat_cable-wallpaper-1920x1080w.jpg)"
@@ -64,21 +80,30 @@
         </div>
     </section>
 
-    <section id="Products" class="row content-filler1" style="">
+    <section id="Products" class="row content-filler" style="">
         <h1>מוצרים</h1>
-        <p>section 1 Content</p>
+        <p>מוצרים למכירה</p>
     </section>
 
     <section  class="row" style="">
         <div class="fill-screen fixed-attachment"
              style="background-image: url(view/images/apple_desk-wallpaper-1920x1080.jpg)">
+
+            <center>
+                <div class="galleria">
+                    <img src="view/images/iphone-5-lightning-charger.png">
+                    <img src="view/images/Short-Braided-Aluminum-Micro-USB-Data-Sync-Charger-Cable-Cord-For-Samsung-For-LG-Phone-Cable.jpg">
+                    <img src="view/images/iphone-6-plus-reachability2.png">
+                </div>
+            </center>
         </div>
+
 
     </section>
 
-    <section id="Cart" class="row content-filler1">
-        <h1>section 3</h1>
-        <p>section 3 Content</p>
+    <section id="Cart" class="row content-filler2">
+        <h1>עגלת הקניות</h1>
+        <p>בחר מוצר להוסיף לעגלה</p>
     </section>
 
     <section class="row" style="">
@@ -87,7 +112,7 @@
         </div>
     </section>
 
-    <section id="AboutUs"  class="row content-filler1">
+    <section id="AboutUs"  class="row content-filler2">
         <h1>section 4</h1>
         <p>section 4 Content</p>
     </section>
@@ -97,19 +122,30 @@
              style="background-image: url(view/images/technology-wallpaper-1920x1080.jpg)">
         </div>
     </section>
-    <section id="ContactUs"  class="row content-filler1">
-        <h1>section 4</h1>
-        <p>section 4 Content</p>
+
+    <section id="ContactUs"  class="row content-filler3">
+        <h1>צור קשר</h1>
+        <p>פרטי התקשרות</p>
     </section>
+
     <section  class="row" style="">
-        <div class="fill-screen fixed-attachment"
+        <div class="gmap fill-screen fixed-attachment"
              style="background-image: url(view/images/organized-wallpaper-1920x1080.jpg)">
+            <h3>מפת החנות</h3>
+            <div id="map"></div>
         </div>
+
     </section>
+
+
+
+
 </div>
 
+
+
 <footer></footer>
-<script src="view/js/jquery-2.1.1.min.js"></script>
+
 <!--<script src="App/BootStrapapp.js"></script>-->
 <script src="view/js/bootstrap.min.js"></script>
 <script src="view/js/classie.js"></script>
@@ -119,6 +155,9 @@
 <script src="view/js/jquery.stellar.js"></script>
 <script src="view/js/wow.min.js"></script>
 <script src="view/js/scrolling.js"></script>
+<script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAyILJD5vMcR16TUcu0mG4yJYRgbgCFF8g&callback=initMap"></script>
+<script src="App/googleMaps.js"></script>
+<script src="App/gallery.js"></script>
 </body>
 
 </html>

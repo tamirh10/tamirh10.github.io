@@ -1,3 +1,4 @@
+
 body {
     position: relative;
     font-family: 'Open Sans', sans-serif;
@@ -34,6 +35,7 @@ html, body {
 .title-row {
     position: relative;
     min-height: 300px;
+
 }
 
 .title-image{
@@ -66,6 +68,7 @@ header {
 }
 
 .down-button i {
+
     color: white;
 }
 
@@ -96,13 +99,20 @@ p {
     }
 }
 
+.content-filler {
+    text-align: center;
+    background-color: transparent;
+}
+
 .content-filler1 {
     text-align: center;
-    margin: 40px 20px;
+    background-color: white;
+
 }
 
 .content-filler2 {
     margin: 50px;
+    text-align: center;
 }
 
 .content-filler3 {
@@ -118,4 +128,9 @@ p {
     padding-top: 5px;
     padding-bottom: 5px;
     opacity: 0.9;
+}
+
+.gmap h3{
+    text-align: center;
+   font-weight: bold;
 }
