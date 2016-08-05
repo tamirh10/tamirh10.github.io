@@ -5,53 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2139ad93-116b-4d8d-8b33-bd902dd88977" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/3_foot_flat_cable-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/3_foot_flat_cable-wallpaper-1920x1080w.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/apple_46-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/apple_desk-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/apple_desktop-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/business-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/call_blocking-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/i_like_facebook-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/iphone_9-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/log2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/logo2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/organized-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/red_bowers_and_wilkins_p3_headphones-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/samsung_galaxy_note___s_pen-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/images/technology-wallpaper-1920x1080.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/BootStrapapp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrapProject.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/css/jquery.fs.wallpaper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/cbpAnimatedHeader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/classie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/jquery-1.12.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/jquery.fs.wallpaper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/jquery.stellar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/jquery.stellar.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/view/js/scrolling.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/images/DB.PNG" afterPath="$PROJECT_DIR$/view/images/DB.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="untitled8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,8 +31,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="1221" column="0" selection-start-line="1221" selection-start-column="0" selection-end-line="1221" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="1216" column="20" selection-start-line="1216" selection-start-column="20" selection-end-line="1216" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -337,7 +291,7 @@
       <workItem from="1470310685838" duration="16735000" />
       <workItem from="1470330323463" duration="3378000" />
       <workItem from="1470336869124" duration="3180000" />
-      <workItem from="1470353590569" duration="17554000" />
+      <workItem from="1470353590569" duration="17608000" />
     </task>
     <task id="LOCAL-00001" summary="wqeqwe">
       <created>1470358931440</created>
@@ -367,17 +321,24 @@
       <option name="project" value="LOCAL" />
       <updated>1470405448779</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="wqeqwesdfgdfgdfss">
+      <created>1470407892897</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1470407892897</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44158000" />
+    <option name="totallyTimeSpent" value="44212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -411,7 +372,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wqeqwe" />
     <MESSAGE value="wqeqwesdfgdfgdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="wqeqwesdfgdfgdf" />
+    <MESSAGE value="wqeqwesdfgdfgdfss" />
+    <option name="LAST_COMMIT_MESSAGE" value="wqeqwesdfgdfgdfss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -809,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="1221" column="0" selection-start-line="1221" selection-start-column="0" selection-end-line="1221" selection-end-column="0" />
+        <state relative-caret-position="629">
+          <caret line="1216" column="20" selection-start-line="1216" selection-start-column="20" selection-end-line="1216" selection-end-column="20" />
           <folding />
         </state>
       </provider>
