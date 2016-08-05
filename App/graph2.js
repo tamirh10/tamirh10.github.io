@@ -2,7 +2,7 @@
  * Created by Tamir on 02-Aug-16.
  */
 $(function () {
-    d3.json('table3.json', function(data) {
+    d3.json('users.json', function(data) {
         nv.addGraph(function() {
             var chart = nv.models.stackedAreaChart()
                 .margin({right: 100})
@@ -10,7 +10,7 @@ $(function () {
                 .y(function(d) { return d[1] })   //...in case your data is formatted differently.
                 .useInteractiveGuideline(true)    //Tooltips which show all data points. Very nice!
                 .rightAlignYAxis(true)      //Let's move the y-axis to the right side.
-                .transitionDuration(500)
+                .duration(500)
                 .showControls(true)       //Allow user to choose 'Stacked', 'Stream', 'Expanded' mode.
                 .clipEdge(true);
 
@@ -23,7 +23,7 @@ $(function () {
             chart.yAxis
                 .tickFormat(d3.format(',.2f'));
 
-            d3.select('#chart svg')
+            d3.select('p4')
                 .datum(data)
                 .call(chart);
 

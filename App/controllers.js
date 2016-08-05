@@ -12,7 +12,7 @@
 
     $http({
         method: 'GET',
-        url: 'adidas.json'
+        url: 'Movies.json'
     })
         .success(function (data)
         {
@@ -24,58 +24,40 @@
 
     .controller('stackedAreaChartCtrl', function($scope,$http) {
 
-        $scope.options = {
-            chart: {
-                type: 'stackedAreaChart',
-                height: 450,
-                margin: {
-                    top: 20,
-                    right: 20,
-                    bottom: 30,
-                    left: 40
-                },
-                x: function (d) {
-                    return d[0];
-                },
-                y: function (d) {
-                    return d[1];
-                },
-                useVoronoi: false,
-                clipEdge: true,
-                duration: 100,
-                useInteractiveGuideline: true,
-                xAxis: {
-                    showMaxMin: false,
-                    tickFormat: function (d) {
+        d3.json('stackedAreaData.json', function(data) {
+            nv.addGraph(function() {
+                var chart = nv.models.stackedAreaChart()
+                    .margin({right: 100})
+                    .x(function(d) { return d[0] })   //We can modify the data accessor functions...
+                    .y(function(d) { return d[1] })   //...in case your data is formatted differently.
+                    .useInteractiveGuideline(true)    //Tooltips which show all data points. Very nice!
+                    .rightAlignYAxis(true)      //Let's move the y-axis to the right side.
+                    .duration(500)
+                    .showControls(true)       //Allow user to choose 'Stacked', 'Stream', 'Expanded' mode.
+                    .clipEdge(true);
+
+                //Format x-axis labels with custom function.
+                chart.xAxis
+                    .tickFormat(function(d) {
                         return d3.time.format('%x')(new Date(d))
-                    }
-                },
-                yAxis: {
-                    tickFormat: function (d) {
-                        return d3.format(',.2f')(d);
-                    }
-                },
-                zoom: {
-                    enabled: true,
-                    scaleExtent: [1, 10],
-                    useFixedDomain: false,
-                    useNiceScale: false,
-                    horizontalOff: false,
-                    verticalOff: true,
-                    unzoomEventType: 'dblclick.zoom'
-                }
-            }
-        };
+                    });
 
-        $http({
-            method: "GET",
-            url: "table3.json"
+                chart.yAxis
+                    .tickFormat(d3.format(',.2f'));
+
+                d3.select('#chart svg')
+                    .datum(data)
+                    .call(chart);
+
+                nv.utils.windowResize(chart.update);
+
+                return chart;
+            });
         })
-                .success(function (data) {
 
-                            $scope.data = data;
-                    console.log(data);
-                        });
+
+
+
 
     })
 

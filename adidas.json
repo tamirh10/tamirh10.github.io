@@ -1,5 +1,4 @@
-{"adidas":[
-  {"Id":"John", "name":"Doe"},
-  {"Id":"Anna", "name":"Smith"},
-  {"Id":"Peter", "name":"Jones"}
-]}
+[{"$id":"John","id":1,"name":"Doe"},
+  {"$id":"Anna","id":2,"name":"Smith"},
+  {"$id":"Peter","id":3,"name":"Jones"},
+  {"$id":"Motombo","id":4,"name":"Moti"}]

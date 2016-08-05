@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns:col="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="Style/CSS/app.css" rel="stylesheet">
-
+<link href="view/css/barChar.css" rel="stylesheet"/>
+    <link href="view/css/stackedAreaChart.css" rel="stylesheet"/>
     <!-- Load c3.css -->
     <link href="Style/CSS/c3.css" rel="stylesheet" />
 
@@ -60,9 +61,8 @@
 
     <script src="view/js/plugin.js"></script>
     <script src="App/juerySample.js"></script>
- <script src="App/graph.js"></script>
-    <script src="App/graph2.js"></script>
-    <!--<script src="App/barChart.js"></script>-->
+
+
 </head>
 
 <body ng-app="app.controllers">
@@ -177,13 +177,24 @@
                                 </div>
                             </div>
                         </div>
+
+
                         <div class="panel-body" ng-repeat="movie in movies">
+                            <!-- panel body  -->
+
                             <div class="huge">{{movie.name}}</div>
                             <a href="#"><span>View Details</span></a>
                             <div class="clearfix"></div>
+
+                            <!-- panel body  -->
                         </div>
+
+
+
                     </div>
                 </div>
+
+                <!-- barChart Column  -->
 
                 <div class="col-lg-3 col-md-6" ng-controller="usersController">
                     <div class="panel panel-dashboard">
@@ -197,13 +208,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="panel-body"  ng-repeat="user in users">
-                            <p2></p2>
+                        <div class="panel-body" >
+                            <!-- panel body  -->
 
+                            <p8></p8>
+
+                            <!-- panel body  -->
                         </div>
 
                     </div>
                 </div>
+
+                <!-- barChart Column  -->
+
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-dashboard">
                         <div class="panel-heading">
@@ -216,11 +233,17 @@
                             </div>
                         </div>
                         <div class="panel-body" ng-controller="stackedAreaChartCtrl">
-                            <nvd3 options="options" data="data"></nvd3>
+                            <nvd3 options="options" data="data" ></nvd3>
+                            <div id="chart">
+                                <svg></svg>
+                            </div>
 
+
+                            <div class="clearfix"></div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
             <!-- /.row -->
@@ -247,7 +270,7 @@
                         <div  ng-controller="MoviesController">
                            
                         </div>
-
+<p5></p5>
 
                         <!-- /.panel-body -->
                     </div>
@@ -393,6 +416,8 @@
     </div>
     <script src="http://cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
     <script src="view/js/plugin.js"></script>
-    
+    <script src="App/graph.js"></script>
+    <script src="App/graph2.js"></script>
+    <script src="App/barChart.js"></script>
 </body>
 </html>
