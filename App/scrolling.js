@@ -12,9 +12,9 @@ $(function () {
         offset: 160
     });
 
-    $('nav a , .down-button a').bind('click', function () {
+    $('nav a , .down-button a').bind('click', function () { 
         $('html,body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 60
+            scrollTop: $($(this).attr('href')).offset().top - 45
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
 
