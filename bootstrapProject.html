@@ -13,11 +13,12 @@ var map=null;
     <link rel="stylesheet" href="view/css/font-awesome.min.css">
     <link rel="stylesheet" href="view/css/animate.css">
     <link rel="stylesheet" href="view/css/app.css">
+    <link rel="stylesheet" href="view/css/googleMaps.css"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="view/css/BootStrapProject.css">
-    <link rel="stylesheet" href="view/galleria/themes/classic/galleria.classic.css">
+    <link rel="stylesheet" href="view/css/gallery2.css"/>
     <script src="view/js/jquery-2.1.1.min.js"></script>
-    <script src="view/galleria/galleria-1.4.2.min.js"></script>
+    <script src="App/gallery2.js"></script>
 
     <style>
         #map {
@@ -26,10 +27,6 @@ var map=null;
             margin-left: 25%;
         }
     </style>
-
-
-
-
 
 </head>
 
@@ -89,13 +86,47 @@ var map=null;
         <div class="fill-screen fixed-attachment"
              style="background-image: url(view/images/apple_desk-wallpaper-1920x1080.jpg)">
 
-            <center>
-                <div class="galleria">
-                    <img src="view/images/iphone-5-lightning-charger.png">
-                    <img src="view/images/Short-Braided-Aluminum-Micro-USB-Data-Sync-Charger-Cable-Cord-For-Samsung-For-LG-Phone-Cable.jpg">
-                    <img src="view/images/iphone-6-plus-reachability2.png">
+            <<div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+            <!-- Loading Screen -->
+            <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+            </div>
+            <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/iphone-5-lightning-charger.jpg" />
+                    <div data-u="caption" data-t="0" style="position: absolute; top: 320px; left: 30px; width: 350px; height: 30px;  font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;"></div>
                 </div>
-            </center>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/iphone-6-plus-reachability.jpg" />
+                    <div data-u="caption" data-t="1" data-3d="1" style="position: absolute; top: -50px; left: 125px; width: 350px; height: 30px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;"></div>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/Olloclip-3-in-1.jpg" />
+                    <div data-u="caption" data-t="2" style="position: absolute; top: 30px; left: -380px; width: 350px; height: 30px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;"></div>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/apple-watch-premium-design-vs-pebble-time-round-classic-design.jpg" />
+                    <div data-u="caption" data-t="3" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px;  font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;"></div>
+                </div>
+                <div data-p="112.50" style="display: none;">
+                    <img data-u="image" src="img/ipad-mini-blue-concept-01.png" />
+                    <div data-u="caption" data-t="4" style="position: absolute; top: 30px; left: 30px; width: 350px; height: 30px; font-size: 20px; color: #ffffff; line-height: 30px; text-align: center;"></div>
+                </div>
+
+                <a data-u="add" href="http://www.jssor.com" style="display:none">Jssor Slider</a>
+
+            </div>
+            <!-- Bullet Navigator -->
+            <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
+                <div data-u="prototype" style="width:12px;height:12px;"></div>
+            </div>
+            <!-- Arrow Navigator -->
+            <span data-u="arrowleft" class="jssora02l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+            <span data-u="arrowright" class="jssora02r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        </div>
+
+            <!-- #endregion Jssor Slider End -->
         </div>
 
 
@@ -133,7 +164,30 @@ var map=null;
              style="background-image: url(view/images/organized-wallpaper-1920x1080.jpg)">
             <h3>מפת החנות</h3>
             <div id="map"></div>
+            <div id="right-panel">
+                <div>
+                    <b>התחלה:</b>
+                    <select class="styled-select yellow rounded" id="start">
+                        <option value="Yiftah, Israel">מיקום נוכחי</option>
+                    </select>
+                    <br>
+                    <b>סוף</b>
+                    <select class="styled-select yellow rounded" id="end">
+                        <option value="Tel Aviv HaShalom,Israel">All 4 Phone , Israel</option>
+                    </select>
+                    <br>
+                    <input class="button" type="submit" id="submit">
+                </div>
+
+            </div>
+            <address class="wow bounceInDown" style="margin-top: 30%; margin-left: 50%" >
+                Visit us at:<br>
+                Tel Aviv<br>
+                Wilson, 5<br>
+                ISRAEL
+            </address>
         </div>
+
 
     </section>
 
@@ -142,6 +196,8 @@ var map=null;
 
 </div>
 
+</body>
+</html>
 
 
 <footer></footer>
@@ -157,7 +213,7 @@ var map=null;
 <script src="view/js/scrolling.js"></script>
 <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAyILJD5vMcR16TUcu0mG4yJYRgbgCFF8g&callback=initMap"></script>
 <script src="App/googleMaps.js"></script>
-<script src="App/gallery.js"></script>
+<script src="view/js/jssor.slider.mini.js"></script>
 </body>
 
 </html>

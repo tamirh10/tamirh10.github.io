@@ -32,22 +32,70 @@
 };
 
     function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: myLatLng
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatLng
+        });
+
+        // Insert this overlay map type as the first overlay map type at
+        // position 0. Note that all overlay map types appear on top of
+        // their parent base map.
+        map.overlayMapTypes.insertAt(
+            0, new CoordMapType(new google.maps.Size(256, 256)));
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Hello World!'
+        });
+        var directionsService = new google.maps.DirectionsService;
+        var directionsDisplay = new google.maps.DirectionsRenderer;
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: myLatLng
+        });
+        directionsDisplay.setMap(map);
+
+        document.getElementById('submit').addEventListener('click', function() {
+            calculateAndDisplayRoute(directionsService, directionsDisplay);
+        });
+    }
+
+function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+
+
+    directionsService.route({
+        origin: document.getElementById('start').value,
+        destination: document.getElementById('end').value,
+
+
+        travelMode: 'DRIVING'
+    },
+        function(response, status) {
+        if (status === 'OK') {
+            console.log("OK");
+            directionsDisplay.setDirections(response);
+            var route = response.routes[0];
+            var summaryPanel = document.getElementById('directions-panel');
+            summaryPanel.innerHTML = '';
+            // For each route, display summary information.
+            for (var i = 0; i < route.legs.length; i++) {
+                var routeSegment = i + 1;
+                summaryPanel.innerHTML += '<b>הוראות הגעה: '
+                    '</b><br>';
+                summaryPanel.innerHTML += route.legs[i].start_address + ' to -'.bold() ;
+                summaryPanel.innerHTML += route.legs[i].end_address + '<br>';
+                summaryPanel.innerHTML += route.legs[i].distance.text + '<br><br>';
+            }
+        } else {
+            window.alert('Directions request failed due to ' + status);
+        }
     });
 
-    // Insert this overlay map type as the first overlay map type at
-    // position 0. Note that all overlay map types appear on top of
-    // their parent base map.
-    map.overlayMapTypes.insertAt(
-    0, new CoordMapType(new google.maps.Size(256, 256)));
-    var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!'
-});
-    google.maps.event.trigger(map, 'resize');
-    map.checkResize();
-}
+    }
+
+
+
+
+
 
