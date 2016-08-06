@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2139ad93-116b-4d8d-8b33-bd902dd88977" name="Default" comment="google maps">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrapProject.html" afterPath="$PROJECT_DIR$/bootstrapProject.html" />
     </list>
     <ignored path="untitled8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +67,9 @@
         <option value="Tamir" />
       </list>
     </option>
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -234,7 +235,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/view/wojodesign-simplecart-js-51a9a38" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="COMMENT&#9;ACTION&#9;CommentByBlockComment&#10;COMME&#9;ACTION&#9;CommentByBlockComment&#10;git&#9;ACTION&#9;Git.Init" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
@@ -345,7 +346,7 @@
       <workItem from="1470448380795" duration="43000" />
       <workItem from="1470472472015" duration="3219000" />
       <workItem from="1470475707025" duration="3820000" />
-      <workItem from="1470480219812" duration="1586000" />
+      <workItem from="1470480219812" duration="1634000" />
     </task>
     <task id="LOCAL-00001" summary="wqeqwe">
       <created>1470358931440</created>
@@ -487,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1470480335367</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="google maps">
+      <created>1470481830118</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1470481830118</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85122000" />
+    <option name="totallyTimeSpent" value="85170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
