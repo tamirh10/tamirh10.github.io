@@ -61,10 +61,10 @@
         });
     }
 
-function calculateAndDisplayRoute(directionsService, directionsDisplay) {
+// function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 
 
-    directionsService.route({
+    /*directionsService.route({
         origin: document.getElementById('start').value,
         destination: document.getElementById('end').value,
 
@@ -92,7 +92,7 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         }
     });
 
-    }
+    }*/
 
 
 

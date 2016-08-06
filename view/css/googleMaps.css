@@ -1,8 +1,18 @@
+.input-group[class*="col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
-address {
+address   {
     display: block;
     font-style: italic;
 }
+
+div3 {
+    text-align: right;
+    left: 65%;
+}
+
 #right-panel {
     font-family: 'Roboto','sans-serif';
     line-height: 30px;
@@ -27,11 +37,30 @@ html, body {
     padding: 0;
 }
 #map {
-    height: 100%;
-    float: left;
-    width: 70%;
-    height: 100%;
+    height: 300%;
+
 }
+
+body {
+    background-color:#CCC }
+
+#map-outer {
+    height: 440px;
+    padding: 20px;
+    border: 2px solid #CCC;
+    margin-bottom: 20px;
+    background-color:#FFF }
+
+#map-container {
+    height: 400px }
+
+@media all and (
+max-width: 991px) {
+
+    #map-outer  {
+        height: 650px }
+}
+
 #right-panel {
     margin: 20px;
     border-width: 2px;
@@ -52,7 +81,7 @@ html, body {
 }
 
 /* -------------------- Page Styles (not required) */
-div { margin: 20px; }
+
 
 /* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
 /* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */

@@ -101,7 +101,7 @@ p {
 
 .content-filler {
     text-align: center;
-    background-color: transparent;
+    background-color: white;
 }
 
 .content-filler1 {
@@ -111,13 +111,14 @@ p {
 }
 
 .content-filler2 {
-    margin: 50px;
     text-align: center;
+    background-color: white;
 }
 
 .content-filler3 {
     text-align: center;
-    margin: 40px 20px;
+background-color: antiquewhite;
+
 }
 
 .navbar-inverse .navbar-nav > li > a {
