@@ -29,7 +29,10 @@
     <link href="view/css/pieChart.css" rel="stylesheet"/>
     <!--<link href="js/d3.compose.css"/>-->
     <!-- Load d3.js and c3.js -->
+    <link rel="stylesheet" href="css/scatterChart.css"/>
+    <link rel="stylesheet" href="css/discBarChart.css"/>
 
+    <link rel="stylesheet" href="css/dChart.css"/>
     <script src="view/js/c3.min.js"></script>
 
 
@@ -139,8 +142,8 @@
     <div id="page-wrapper">
         <div class="row" ng-controller="MoviesController">
 
-
-            <div class="col-lg-3 col-md-6 ">
+            <div class="row-height">
+            <div class="col-lg-3 col-md-8 ">
 
                 <div class="panel panel-dashboard">
                     <div class="panel-heading">
@@ -163,14 +166,14 @@
                         </div>
                     </div>
                     <div class="panel-body ">
-                        <p style="height: 395px"></p>
+                        <p style="height: 345px;display: block;margin: auto"></p>
 
 
                     </div>
                 </div>
             </div>
 
-
+</div>
             <div class="col-lg-3 col-md-6">
                 <div class="panel panel-dashboard">
                     <div class="panel-heading">
@@ -194,7 +197,7 @@
                     <div class="panel-body">
                         <!-- panel body  -->
                         <!--<div id="wrapper2">-->
-<div id="hbarr"></div>
+                        <div style="height: 365px" id="hbarr"></div>
                         <!-- panel body  -->
                     </div>
                 </div>
@@ -224,7 +227,7 @@
                     <div class="panel-body">
                         <!-- panel body  -->
 
-                        <p8></p8>
+                        <div style="height: 300px"> <p8></p8> </div>
 
                         <!-- panel body  -->
                     </div>
@@ -254,7 +257,7 @@
                     </div>
                     <div class="panel-body" ng-controller="stackedAreaChartCtrl">
                         <nvd3 options="options" data="data"></nvd3>
-                        <div style="height: 405px" id="chart">
+                        <div style="height: 365px" id="chart">
                             <svg></svg>
                         </div>
 
@@ -276,7 +279,7 @@
                 <div class="panel panel-dashboard">
                     <div class="panel-heading">
                         <div class="row">
-                            <div class="col-xs-12 text-center">
+                            <div class="col-lg-8 col-xs-12 text-center">
 
                                 <div class="controls left"><i class="ion ion-more"></i></div>
                                 <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
@@ -289,28 +292,28 @@
                     <!-- /.panel-heading -->
                     <div class="panel-body">
 
-                    <div ng-controller="MoviesController">
+                        <div ng-controller="MoviesController">
 
-                        <d class='with-3d-shadow with-transitions'>
-                        <div style="position:absolute; top: 0; left: 0;">
-                            <button onclick="randomizeFillOpacity();">Randomize fill opacity</button>
-                            <button onclick="expandLegend();">Expand/Contract Legend</button>
 
-                        </div>
-                        <div style="height: 200px" id="chart1"></div>
+                                <div style="position:absolute; top: 0; left: 0;">
+                                    <button onclick="randomizeFillOpacity();">Randomize fill opacity</button>
+                                    <button onclick="expandLegend();">Expand/Contract Legend</button>
 
+                                </div>
+                                <div style="height: 300px" id="chart1"></div>
 </div>
 
-                    <!-- /.panel-body -->
-                <!-- /.panel -->
-</div>
+
+                        <!-- /.panel-body -->
+                        <!-- /.panel -->
                     </div>
+                </div>
 
                 <div class="panel panel-dashboard">
                     <div class="panel-heading">
                         <div class="row">
 
-                            <div class="col-xs-12 text-center">
+                            <div class="col-lg-8 col-xs-12 text-center">
                                 <div class='controls left'><i class="ion ion-more"></i></div>
                                 <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                                 </div>
@@ -322,7 +325,9 @@
 
                     <div class="panel-body">
                         <div ng-controller="MoviesController">
-
+                            <div style="height: 300px" id="test1111" class='with-3d-shadow with-transitions'>
+                                <svg></svg>
+                            </div>
                         </div>
                     </div>
                     <!-- /.panel-body -->
@@ -344,11 +349,10 @@
                     <!-- /.panel-heading -->
                     <div class="panel-body">
                         <div ng-controller="MoviesController">
-                            <div>
-                                <epoch-live-line chart-class="category10" chart-height="200" chart-data="realtimeLine"
-                                                 chart-stream="realtimeLineFeed"
-                                                 chart-axes="areaAxes"></epoch-live-line>
+                            <div style="height: 300px" id="chart11">
+                                <svg></svg>
                             </div>
+
                         </div>
 
                     </div>
@@ -364,7 +368,7 @@
                     <div class="panel-heading">
 
                         <div class="row">
-                            <div class="col-xs-12 text-center">
+                            <div class="col-lg-4 col-xs-12 text-center">
                                 <div class="huge">{{currentRamNumber}}</div>
                                 <div class="controls left"><i class="ion ion-more"></i></div>
                                 <div class="controls right"><a class="remove"><i class="ion ion-minus-round "></i></a>
@@ -372,73 +376,70 @@
                                 <div class="center">CPU Performance</div>
                             </div>
 
-
-
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div ng-controller="MoviesController">
+                            <svg style="display:block;margin: auto;" id="test1" class="mypiechart"></svg>
 
-                            </div>
                         </div>
-
                     </div>
-                    <!-- /.panel-body -->
+
                 </div>
+                <!-- /.panel-body -->
 
-                <div class="panel panel-dashboard">
 
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-12 text-center">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-12 text-center">
 
-                                <div class="huge">{{currentRamNumber}}</div>
-                                <div class="controls left"><i class="ion ion-more"></i></div>
-                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
-                                </div>
-                                <div class="center">Notifications Panel</div>
-
+                            <div class="huge">{{currentRamNumber}}</div>
+                            <div class="controls left"><i class="ion ion-more"></i></div>
+                            <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                             </div>
+                            <div class="center">Notifications Panel</div>
+
                         </div>
-
                     </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div class="list-group" ng-controller="MoviesController">
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-comment fa-fw"></i>Server Time
 
-                                    <span class="pull-right text-muted small">
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="list-group" ng-controller="MoviesController">
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-comment fa-fw"></i>Server Time
+
+                            <span class="pull-right text-muted small">
                                         <em>{{currentServerTime}}</em>
                                     </span>
-                            </a>
-                            <a href="#" class="list-group-item">
-                                <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-warning fa-fw"></i>Server Not Responding
 
-                                    <span class="pull-right text-muted small">
+                            <span class="pull-right text-muted small">
                                         <em>10:57 AM  {{currentServerTimeManually}}</em>
                                     </span>
-                            </a>
+                        </a>
 
-                        </div>
-
-                        <!-- /.list-group -->
-                        <button ng-click="getServerTime()" class="btn btn-default btn-block">Get Manual Time</button>
                     </div>
-                    <!-- /.panel-body -->
+
+                    <!-- /.list-group -->
+                    <button ng-click="getServerTime()" class="btn btn-default btn-block">Get Manual Time</button>
                 </div>
-                <!-- /.panel -->
-
-
+                <!-- /.panel-body -->
             </div>
-            <!-- /.col-lg-4 -->
+
+
         </div>
-
-
-        <!-- /.panel -->
-
-
+        <!-- /.col-lg-4 -->
     </div>
-    <!-- /.col-lg-4 -->
+
+
+    <!-- /.panel -->
+
+
+</div>
+<!-- /.col-lg-4 -->
 </div>
 <!-- /.row -->
 </div>
@@ -453,5 +454,10 @@
 <!--compose-->
 <script src="App/hBar.js"></script>
 <script src="App/LineChart.js"></script>
+<script src="App/scatterChart.js"></script>
+<script src="App/discBarChart.js"></script>
+<script src="nvd3/examples/lib/stream_layers.js"></script>
+<script src="App/dChart.js"></script>
+
 </body>
 </html>
