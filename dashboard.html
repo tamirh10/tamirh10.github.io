@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AngularJS - SignalR - ServiceDashboard</title>
-    <link href="Style/CSS/epoch.min.css" rel="stylesheet" />
+    <link href="Style/CSS/epoch.min.css" rel="stylesheet"/>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
 
     <!-- MetisMenu css -->
     <!-- Timeline css -->
-    <link href="Style/CSS/timeline.css" rel="stylesheet" />
+    <link href="Style/CSS/timeline.css" rel="stylesheet"/>
     <!-- Custom css -->
     <link href="Style/CSS/sb-admin-2.css" rel="stylesheet">
-    <link href="view/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="view/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" src="Style/CSS/metismenu.min.css">
     <!-- Morris Charts css -->
     <link href="Style/CSS/morris.css" rel="stylesheet">
@@ -22,16 +22,15 @@
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="Style/CSS/app.css" rel="stylesheet">
-<link href="view/css/barChar.css" rel="stylesheet"/>
+    <link href="view/css/barChar.css" rel="stylesheet"/>
     <link href="view/css/stackedAreaChart.css" rel="stylesheet"/>
     <!-- Load c3.css -->
-    <link href="Style/CSS/c3.css" rel="stylesheet" />
-    <link href="view/css/pieChart.css" rel="stylesheet" />
+    <link href="Style/CSS/c3.css" rel="stylesheet"/>
+    <link href="view/css/pieChart.css" rel="stylesheet"/>
+    <!--<link href="js/d3.compose.css"/>-->
+    <!-- Load d3.js and c3.js -->
 
-<!-- Load d3.js and c3.js -->
-
-<script src="view/js/c3.min.js"></script>
-
+    <script src="view/js/c3.min.js"></script>
 
 
     <script src="view/js/jquery-2.1.1.min.js"></script>
@@ -43,7 +42,7 @@
 
 
     <script src="view/js/bootstrap.min.js"></script>
-    
+
     <script src="view/js/epoch.min.js"></script>
     <script src="view/js/ng-epoch.js"></script>
     <script src="view/js/pie-chart.min.js"></script>
@@ -70,362 +69,380 @@
 </head>
 
 <body ng-app="app.controllers">
-    <div class="menu">
-        <div class="sidebar-nav ">
-            <ul class="nav" id="side-menu">
-                <li class="heading">
-                    <a href="index.html">AngularJs Client</a>
-                </li>
-                <li>
-                    <a class="active" href="#"><i class="ion ion-speedometer"></i>Dashboard<span class="ion ion-ios7-arrow-right pull-right"></span></a>
-                </li>
-                <li>
-                    <a href="#"><i class="ion ion-stats-bars"></i>Logging<span class="ion ion-ios7-arrow-right pull-right"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="#">Realtime Heartbeat</a>
-                        </li>
-                        <li>
-                            <a href="#">Communicate</a>
-                        </li>
-                    </ul>
-                    <!-- /.nav-second-level -->
-                </li>
-                <li>
-                    <a href="#"><i class="ion ion-fork-repo"></i>Libraries Used<span class="ion ion-ios7-arrow-right pull-right"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li class="dropdown-header">Core</li>
-                        <li><a href="https://angularjs.org/">Angular.js</a></li>
-                        <li><a href="http://jquery.com/">jQuery</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Charting</li>
-                        <li><a href="http://d3js.org/">D3.js</a></li>
-                        <li><a href="http://fastly.github.io/epoch/">Epoch.js</a></li>
-                        <li><a href="https://github.com/dainbrump/ng-epoch">Ng-Epoch</a></li>
-                        <li class="dropdown-header">UI</li>
-                        <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-                        <li><a href="http://bootswatch.com/cyborg/">Boostwatch</a></li>
-                        <li><a href="http://bootswatch.com/cyborg/">SbAdmin</a></li>
-                    </ul>
-                    <!-- /.nav-second-level -->
-                </li>
-                <li>
-                    <a href="#"><i class="ion ion-home"></i>Author <span class="ion ion-ios7-arrow-right pull-right"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li><a href="http://all4phone.co.il">T.Hoshmand</a></li>
-                    </ul>
-                    <!-- /.nav-second-level -->
-                </li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- /.sidebar-collapse -->
+<div class="menu">
+    <div class="sidebar-nav ">
+        <ul class="nav" id="side-menu">
+            <li class="heading">
+                <a href="index.html">AngularJs Client</a>
+            </li>
+            <li>
+                <a class="active" href="#"><i class="ion ion-speedometer"></i>Dashboard<span
+                        class="ion ion-ios7-arrow-right pull-right"></span></a>
+            </li>
+            <li>
+                <a href="#"><i class="ion ion-stats-bars"></i>Logging<span
+                        class="ion ion-ios7-arrow-right pull-right"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="#">Realtime Heartbeat</a>
+                    </li>
+                    <li>
+                        <a href="#">Communicate</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="ion ion-fork-repo"></i>Libraries Used<span
+                        class="ion ion-ios7-arrow-right pull-right"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="dropdown-header">Core</li>
+                    <li><a href="https://angularjs.org/">Angular.js</a></li>
+                    <li><a href="http://jquery.com/">jQuery</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Charting</li>
+                    <li><a href="http://d3js.org/">D3.js</a></li>
+                    <li><a href="http://fastly.github.io/epoch/">Epoch.js</a></li>
+                    <li><a href="https://github.com/dainbrump/ng-epoch">Ng-Epoch</a></li>
+                    <li class="dropdown-header">UI</li>
+                    <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
+                    <li><a href="http://bootswatch.com/cyborg/">Boostwatch</a></li>
+                    <li><a href="http://bootswatch.com/cyborg/">SbAdmin</a></li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li>
+                <a href="#"><i class="ion ion-home"></i>Author <span class="ion ion-ios7-arrow-right pull-right"></span></a>
+                <ul class="nav nav-second-level">
+                    <li><a href="http://all4phone.co.il">T.Hoshmand</a></li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+
+<div id="wrapper" class="inner-wrapper">
+    <div class="mobile-nav">
+
+        <ul>
+            <li><a id="outside" class="open-menu" href="#"><i class="ion ion-grid"></i></a>
+            </li>
+            <li><a href="http://all4phone.co.il">all4phone.co.il</a>
+            </li>
+        </ul>
+
     </div>
 
-    <div id="wrapper" class="inner-wrapper">
-        <div class="mobile-nav">
-
-            <ul>
-                <li><a id="outside" class="open-menu" href="#"><i class="ion ion-grid"></i></a>
-                </li>
-                <li><a href="http://all4phone.co.il">all4phone.co.il</a>
-                </li>
-            </ul>
-
-        </div>
-        
-        <div id="page-wrapper">
-            <div class="row" ng-controller="MoviesController">
+    <div id="page-wrapper">
+        <div class="row" ng-controller="MoviesController">
 
 
+            <div class="col-lg-3 col-md-6 ">
 
-                <div class="col-lg-3 col-md-6 ">
-                     
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Memory Performance</div>
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
+                                </div>
+                                <div class="center">Memory Performance</div>
 
-                                    <div class="control-row">
-                                        <select name="country-list">
-                                            <option value="Afghanistan">Afghanistan</option>
-                                            <option value="Albania">Albania</option>
-                                            <option value="Algeria">Algeria</option>
+                                <div class="control-row">
+                                    <select name="country-list">
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Albania">Albania</option>
+                                        <option value="Algeria">Algeria</option>
 
-                                        </select>
-                                    </div>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="panel-body ">
-                            <p></p>
-
-                            <a href="#"><span>View Details</span></a>
-                            <div class="clearfix"></div>
                         </div>
                     </div>
-                </div>
-
-                
-               
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Network In K/B </div>
-                                     
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="panel-body" ng-repeat="movie in movies">
-                            <!-- panel body  -->
-
-                            <div class="huge">{{movie.name}}</div>
-                            <a href="#"><span>View Details</span></a>
-                            <div class="clearfix"></div>
-
-                            <!-- panel body  -->
-                        </div>
-
+                    <div class="panel-body ">
+                        <p style="height: 395px"></p>
 
 
                     </div>
                 </div>
+            </div>
 
-                <!-- barChart Column  -->
 
-                <div class="col-lg-3 col-md-6" ng-controller="usersController">
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row" >
-                                <div class="col-xs-12 text-center">
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Network Out K/B</div>
-                                     
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                                 </div>
+                                <select name="country-list">
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+
+                                </select>
+                                <div class="center">Network In K/B</div>
+
                             </div>
                         </div>
-                        <div class="panel-body" >
-                            <!-- panel body  -->
+                    </div>
 
-                            <p8></p8>
-
-                            <!-- panel body  -->
-                        </div>
-
+                    <div class="panel-body">
+                        <!-- panel body  -->
+                        <!--<div id="wrapper2">-->
+<div id="hbarr"></div>
+                        <!-- panel body  -->
                     </div>
                 </div>
+            </div>
 
-                <!-- barChart Column  -->
+            <!-- barChart Column  -->
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Disk </div>
+            <div class="col-lg-3 col-md-6" ng-controller="usersController">
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                                 </div>
+                                <select name="country-list">
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+
+                                </select>
+                                <div class="center">Network Out K/B</div>
+
                             </div>
                         </div>
-                        <div class="panel-body" ng-controller="stackedAreaChartCtrl">
-                            <nvd3 options="options" data="data" ></nvd3>
-                            <div id="chart">
-                                <svg></svg>
-                            </div>
+                    </div>
+                    <div class="panel-body">
+                        <!-- panel body  -->
 
+                        <p8></p8>
 
-                            <div class="clearfix"></div>
-                        </div>
-
+                        <!-- panel body  -->
                     </div>
 
                 </div>
             </div>
-            <!-- /.row -->
 
-            
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-8">
-                  
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                     
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Memory/CPU/Network </div>
-                                    
+            <!-- barChart Column  -->
+
+            <div class="col-lg-3 col-md-6">
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                                 </div>
+                                <select name="country-list">
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+
+                                </select>
+                                <div class="center">Disk</div>
                             </div>
                         </div>
-                        <!-- /.panel-heading -->
-
-                        <div  ng-controller="MoviesController">
-                           
-                        </div>
-<p5></p5>
-
-                        <!-- /.panel-body -->
                     </div>
-                    <!-- /.panel -->
-
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                
-                                <div class="col-xs-12 text-center">
-                                    <div class='controls left'><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">NETWORK/MEMORY/CPU </div>
-                                </div>
-                            </div>
-
+                    <div class="panel-body" ng-controller="stackedAreaChartCtrl">
+                        <nvd3 options="options" data="data"></nvd3>
+                        <div style="height: 405px" id="chart">
+                            <svg></svg>
                         </div>
 
-                        <div class="panel-body">
-                            <div ng-controller="MoviesController">
-                                <epoch-live-bar chart-class="category10" chart-height="200" chart-data="realtimeBar" chart-stream="realtimeBarFeed" chart-axes="barAxes"></epoch-live-bar>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
+
+                        <div class="clearfix"></div>
                     </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <div class="huge">{{currentRamNumber}}</div>
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Responsive Timeline</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div ng-controller="MoviesController">
-                                <div>
-                                    <epoch-live-line chart-class="category10" chart-height="200" chart-data="realtimeLine" chart-stream="realtimeLineFeed" chart-axes="areaAxes"></epoch-live-line>
-                                </div>
-                            </div>
 
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                    <!-- /.col-lg-8 -->
                 </div>
-                <!-- /.col-lg-8 -->
-                 
-                <div class="col-lg-4">
-                    <div class="panel panel-dashboard">
-                        <div class="panel-heading">
 
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                    <div class="huge">{{currentRamNumber}}</div>
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round "></i></a></div>
-                                    <div class="center">CPU Performance</div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+        <!-- /.row -->
+        <div class="row">
+            <div class="col-lg-8">
+
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
                                 </div>
+                                <div class="center">Memory/CPU/Network</div>
+
                             </div>
-
-
-
-                             </div>
-                        <div class="panel-body">
-                            <div ng-controller="MoviesController">
-                                <div id="chart2">
-                                    </div>
-                            </div>
-
                         </div>
-                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+
+                    <div ng-controller="MoviesController">
+
+<script>document.getElementById('tag-id').innerHTML = '<ol><li>nvd3/examples/lineChart.html</li></ol>';</script>
+                    </div>
+</div>
+
+                    <!-- /.panel-body -->
+                <!-- /.panel -->
+
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+
+                            <div class="col-xs-12 text-center">
+                                <div class='controls left'><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
+                                </div>
+                                <div class="center">NETWORK/MEMORY/CPU</div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="panel panel-dashboard">
-                       
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-12 text-center">
-                                     
-                                    <div class="huge">{{currentRamNumber}}</div>
-                                    <div class="controls left"><i class="ion ion-more"></i></div>
-                                    <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a></div>
-                                    <div class="center">Notifications Panel</div>
-                                   
-                                </div>
-                            </div>
+                    <div class="panel-body">
+                        <div ng-controller="MoviesController">
 
                         </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group" ng-controller="MoviesController">
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i>Server Time
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="huge">{{currentRamNumber}}</div>
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
+                                </div>
+                                <div class="center">Responsive Timeline</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div ng-controller="MoviesController">
+                            <div>
+                                <epoch-live-line chart-class="category10" chart-height="200" chart-data="realtimeLine"
+                                                 chart-stream="realtimeLineFeed"
+                                                 chart-axes="areaAxes"></epoch-live-line>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+                <!-- /.col-lg-8 -->
+            </div>
+            <!-- /.col-lg-8 -->
+
+            <div class="col-lg-4">
+                <div class="panel panel-dashboard">
+                    <div class="panel-heading">
+
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+                                <div class="huge">{{currentRamNumber}}</div>
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round "></i></a>
+                                </div>
+                                <div class="center">CPU Performance</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="panel-body">
+                        <div ng-controller="MoviesController">
+                            <div id="chart2">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+
+                <div class="panel panel-dashboard">
+
+                    <div class="panel-heading">
+                        <div class="row">
+                            <div class="col-xs-12 text-center">
+
+                                <div class="huge">{{currentRamNumber}}</div>
+                                <div class="controls left"><i class="ion ion-more"></i></div>
+                                <div class="controls right"><a class="remove"><i class="ion ion-minus-round"></i></a>
+                                </div>
+                                <div class="center">Notifications Panel</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="list-group" ng-controller="MoviesController">
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-comment fa-fw"></i>Server Time
 
                                     <span class="pull-right text-muted small">
                                         <em>{{currentServerTime}}</em>
                                     </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i>Server Not Responding
-                                   
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-warning fa-fw"></i>Server Not Responding
+
                                     <span class="pull-right text-muted small">
                                         <em>10:57 AM  {{currentServerTimeManually}}</em>
                                     </span>
-                                </a>
+                            </a>
 
-                            </div>
-
-                            <!-- /.list-group -->
-                            <button ng-click="getServerTime()" class="btn btn-default btn-block">Get Manual Time</button>
                         </div>
-                        <!-- /.panel-body -->
+
+                        <!-- /.list-group -->
+                        <button ng-click="getServerTime()" class="btn btn-default btn-block">Get Manual Time</button>
                     </div>
-                    <!-- /.panel -->
-
-
+                    <!-- /.panel-body -->
                 </div>
-                <!-- /.col-lg-4 -->
+                <!-- /.panel -->
+
+
             </div>
-
-
-
-
-
-
-
-
-
-            <!-- /.panel -->
-
-
+            <!-- /.col-lg-4 -->
         </div>
-        <!-- /.col-lg-4 -->
-    </div>
-            <!-- /.row -->
-        </div>
-        <!-- /#page-wrapper -->
+
+
+        <!-- /.panel -->
+
 
     </div>
-    <script src="http://cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
-    <script src="view/js/plugin.js"></script>
-    <script src="App/graph.js"></script>
-    <script src="App/graph2.js"></script>
-    <script src="App/barChart.js"></script>
+    <!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+<script src="http://cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+<script src="view/js/plugin.js"></script>
+<script src="App/graph.js"></script>
+<script src="App/graph2.js"></script>
+<script src="App/barChart.js"></script>
+<!--compose-->
+<script src="App/hBar.js"></script>
+<script src="App/LineChart.js"></script>
 </body>
 </html>
