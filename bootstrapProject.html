@@ -21,27 +21,21 @@ var map=null;
     <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
     <link rel="shortcut icon" href="https://dc8hdnsmzapvm.cloudfront.net/favicon.ico">
     <link rel="stylesheet" href="view/css/old.css?0deeeb0" type="text/css" _cdn="true"/>
-    <link rel="apple-touch-icon-precomposed" sizes="57x57"
-          href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-57.png?7345a55"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"
-          href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-72.png?a5899ba"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-114.png?8bde9a0"/>
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-144.png?905e67d"/>
-    <script src="view/js/jquery-2.1.1.min.js"></script>
-
-
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-57.png?7345a55"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-72.png?a5899ba"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-114.png?8bde9a0"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://dc8hdnsmzapvm.cloudfront.net/assets/images/favicon/moz-favicon-144.png?905e67d"/>
 </head>
 
 <body>
-<header id="video-wallpaper">
+<header>
+
     <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" class="navbar-toggle"
+                        data-target="#navbarCollapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -64,507 +58,385 @@ var map=null;
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
 </header>
 
 <div class="container-fluid">
 
-
-    <section id="Top" class="row title-row" style="">
-        <div class="fill-screen stellar-bg "
-             style="background-image: url(view/images/3_foot_flat_cable-wallpaper-1920x1080w.jpg)"
-             data-stellar-backround-ratio="0.2">
-            <div class="down-button">
-                <a class="btn" href="#Products">
-                    <i class="fa fa-arrow-circle-down fa-4x"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="Products" class="row content-filler" style="">
-        <h1>מוצרים</h1>
-        <p>מוצרים למכירה</p>
-    </section>
-
-    <section class="row" style="">
-
-        <div id="sequence" class="seq">
-            <ul class="seq-canvas">
-
-                <li class="seq-step1 seq-valign seq-in">
-                    <div class="seq-vcenter">
-                        <img data-seq class="seq-feature" style="width: 60%;height: 50%" src="images/iphone-5-lightning-charger%20copy.png"
-                             alt="A cartoon illustration of a bunch of bananas" width="389" height="300"
-                             srcset="images/iphone-5-lightning-charger.png 1x, images/iphone-5-lightning-charger%20copy.png 2x"/>
-                        <h2 data-seq class="seq-title">מטען מהיר אפל</h2>
-                    </div>
-                </li>
-
-                <li class="seq-step2 seq-valign">
-                    <div class="seq-vcenter">
-                        <img data-seq class="seq-feature"  src="img/Olloclip-3-in-1.png"
-                             alt="A cartoon illustration of half a coconut" width="325" height="300"
-                             srcset="img/Olloclip-3-in-1.png 1x, img/Olloclip-3-in-1.png 2x"/>
-                        <h2 data-seq class="seq-title">מצלמת עין הדג</h2>
-                    </div>
-                </li>
-
-                <li class="seq-step3 seq-valign">
-                    <div class="seq-vcenter">
-                        <img data-seq class="seq-feature" style="width: 50%;height: 40%" src="view/images/iphone-6-plus-reachability2.png"
-                             alt="A cartoon illustration of a round orange" width="350" height="300"
-                             srcset="view/images/iphone-6-plus-reachability2.png 1x, view/images/iphone-6-plus-reachability2.png 2x"/>
-                        <h2 data-seq class="seq-title">אייפון 6</h2>
-                    </div>
-                </li>
-            </ul>
-
-            <fieldset class="seq-nav" aria-label="Slider buttons" aria-controls="sequence">
-
-                <button type="button" class="seq-prev" aria-label="Previous">
-                    <img src="images/prev.svg" alt="Previous"/>
-                </button>
-
-                <ul role="navigation" aria-label="Pagination" class="seq-pagination">
-                    <li class="seq-current">
-                        <a href="#step1" rel="step1" title="Go to bananas">
-                            <img src="images/iphone-5-lightning-charger%20copy.png" alt="Bananas" width="50" height="40"/>
+    <div class="row">
+        <div class="col-lg-12 col-md-8 col-xs-4">
+            <section id="Top" class="row title-row" style="">
+                <div class="fill-screen stellar-bg "
+                     style="background-image: url(view/images/3_foot_flat_cable-wallpaper-1920x1080w.jpg)"
+                     data-stellar-backround-ratio="0.2">
+                    <div class="down-button">
+                        <a class="btn" href="#Products">
+                            <i class="fa fa-arrow-circle-down fa-4x"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="#step2" rel="step2" title="Go to coconut">
-                            <img src="img/Olloclip-3-in-1.png" alt="Coconut" width="50" height="40"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#step3" rel="step3" title="Go to orange">
-                            <img src="view/images/iphone-6-plus-reachability2.png" alt="Orange" width="50" height="40"/>
-                        </a>
-                    </li>
-                </ul>
-
-                <button type="button" class="seq-next" aria-label="Next">
-                    <img src="images/next.svg" alt="Next"/>
-                </button>
-
-            </fieldset>
-        </div>
-
-
-    </section>
-
-
-    <!--<&#45;&#45;! CART-->
-    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
-    <!--!&ndash;&gt;-->
-
-    <section id="Cart" class="row content-filler2">
-        <h1>עגלת הקניות</h1>
-        <p>בחר מוצר להוסיף לעגלה</p>
-    </section>
-
-    <section class="row" style="">
-        <div class="fill-screen fixed-attachment"
-             style="background-image: url(view/images/apple_46-wallpaper-1920x1080.jpg)">
-
-            <main>
-                <a href="#0" class="cd-add-to-cart" data-price="25.99">הוסף לעגלה</a>
-            </main>
-
-            <div class="cd-cart-container empty">
-                <a href="#0" class="cd-cart-trigger">
-                    Cart
-                    <ul class="count"> <!-- cart items count -->
-                        <li>0</li>
-                        <li>0</li>
-                    </ul> <!-- .count -->
-                </a>
-
-                <div class="cd-cart">
-                    <div class="wrapper">
-                        <header>
-                            <h2>Cart</h2>
-                            <span class="undo">Item removed. <a href="#0">Undo</a></span>
-                        </header>
-
-                        <div class="body">
-                            <ul>
-                                <!-- products added to the cart will be inserted here using JavaScript -->
-                            </ul>
-                        </div>
-
-                        <footer>
-                            <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
-                        </footer>
                     </div>
-                </div> <!-- .cd-cart -->
-            </div> <!-- cd-cart-container -->
-
-
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
+    <div class="row">
+        <div class=" col-lg-12 col-md-8 col-sm-6 col-xs-4">
+            <section id="Products" class="row content-filler" style="">
+                <h1>מוצרים</h1>
+                <p>מוצרים למכירה</p>
+            </section>
 
-   <!-- <&#45;&#45;! ABOUT US (BLUE)
-    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
-    !&ndash;&gt;-->
-    <section id="AboutUs" class="row content-filler2">
-        <h1>עליינו</h1>
-        <p>קצת על ההיסטוריה שלנו</p>
-    </section>
+            <section class="row " style="">
 
-    <section class="row" style="">
-        <div class="fill-screen fixed-attachment"
-             style="background-image: url(view/images/technology-wallpaper-1920x1080.jpg)">
-            <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feedpress.me/mozblog"/>
-            <meta name="viewport" content="width=1200"/>
-            <meta name="description"
-                  content="At Moz, we're making the web a better place&mdash;and loving every minute of it."/>
+                <div id="sequence" class="seq">
+                    <ul class="seq-canvas">
 
-            <section class="about about-index  layout-default">
-                <div id="root" class="no-overflow">
+                        <li class="seq-step1 seq-valign seq-in">
+                            <div class="seq-vcenter">
+                                <img data-seq class="seq-feature" style="width: 60%;height: 50%"
+                                     src="images/iphone-5-lightning-charger%20copy.png"
+                                     alt="A cartoon illustration of a bunch of bananas" width="389" height="300"
+                                     srcset="images/iphone-5-lightning-charger.png 1x, images/iphone-5-lightning-charger%20copy.png 2x"/>
+                                <h2 data-seq class="seq-title">מטען מהיר אפל</h2>
+                            </div>
+                        </li>
 
+                        <li class="seq-step2 seq-valign">
+                            <div class="seq-vcenter">
+                                <img data-seq class="seq-feature" src="img/Olloclip-3-in-1.png"
+                                     alt="A cartoon illustration of half a coconut" width="325" height="300"
+                                     srcset="img/Olloclip-3-in-1.png 1x, img/Olloclip-3-in-1.png 2x"/>
+                                <h2 data-seq class="seq-title">מצלמת עין הדג</h2>
+                            </div>
+                        </li>
 
-                    <script>
-                        var _mgn = {
-                            env: "production",
-                            hosts: {
-                                globalnav: "https://d2otzcfu7vqzws.cloudfront.net/globalnav/1.1.1",
-                                moz: "https://moz.com",
-                                ma: "http://analytics.moz.com",
-                                ose: "https://moz.com/researchtools/ose/",
-                                fwe: "https://moz.com/researchtools/fwe/",
-                                rank: "https://moz.com/researchtools/rank-tracker",
-                                kwd: "https://moz.com/researchtools/keyword-difficulty",
-                                onpage: "https://moz.com/researchtools/on-page-grader",
-                                crawl: "https://moz.com/researchtools/crawl-test",
-                                api: "https://moz.com/products/api",
-                                fw: "https://moz.com/followerwonk",
-                                local: "https://moz.com/local",
-                                qa: "https://moz.com/community/q",
-                                content: "https://moz.com/content/"
-                            },
-                            active: {},
-                            metanav: 1
+                        <li class="seq-step3 seq-valign">
+                            <div class="seq-vcenter">
+                                <img data-seq class="seq-feature" style="width: 50%;height: 40%"
+                                     src="view/images/iphone-6-plus-reachability2.png"
+                                     alt="A cartoon illustration of a round orange" width="350" height="300"
+                                     srcset="view/images/iphone-6-plus-reachability2.png 1x, view/images/iphone-6-plus-reachability2.png 2x"/>
+                                <h2 data-seq class="seq-title">אייפון 6</h2>
+                            </div>
+                        </li>
+                    </ul>
 
-                        };
-                        (function () {
-                            var w = window;
-                            var i = function () {
-                                var gn = document.createElement('script');
-                                gn.type = 'text/javascript';
-                                gn.async = true;
-                                gn.src = 'https://d2otzcfu7vqzws.cloudfront.net/globalnav/1.1.1/scripts/globalnav.min.js';
-                                var s = document.getElementsByTagName('script')[0];
-                                s.parentNode.insertBefore(gn, s);
-                            };
-                            if (w.$) {
-                                i();
-                            } else {
-                                var wl = w.onload;
-                                w.onload = function () {
-                                    wl && wl();
-                                    i();
-                                };
-                            }
-                        })();
-                    </script>
+                    <fieldset class="seq-nav" aria-label="Slider buttons" aria-controls="sequence">
 
+                        <button type="button" class="seq-prev" aria-label="Previous">
+                            <img src="images/prev.svg" alt="Previous"/>
+                        </button>
 
-                    <section class="background-blue sawtooth-top white timeline-section">
-                        <div class="container bubbles">
-                            <h5 class="center darkblue inset-text">היום</h5>
-                            <ol class="timeline row">
-                                <li class="spine"></li>
-                                <li class="item item-left ">
-                                    <div class="image span3 offset0">
+                        <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+                            <li class="seq-current">
+                                <a href="#step1" rel="step1" title="Go to bananas">
+                                    <img src="images/iphone-5-lightning-charger%20copy.png" alt="Bananas" width="50"
+                                         height="40"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step2" rel="step2" title="Go to coconut">
+                                    <img src="img/Olloclip-3-in-1.png" alt="Coconut" width="50" height="40"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#step3" rel="step3" title="Go to orange">
+                                    <img src="view/images/iphone-6-plus-reachability2.png" alt="Orange" width="50"
+                                         height="40"/>
+                                </a>
+                            </li>
+                        </ul>
 
-                                        <div class="circle">
-                                            <img src="img/iphone-6-plus-reachability.jpg" _cdn="true"/></div>
-                                    </div>
-                                    <div class="desc span3 offset0">
-                                        <time>אוקטובר 2015</time>
-                                        <p>חוגגים 3 שנים ביחד </p>
-                                    </div>
-                                </li>
-                                <li class="item item-right skip">
-                                    <div class="desc span4 offset0">
-                                        <time>אפריל 2015</time>
-                                        <p>השקנו ליין חדש של מוצרים</p>
-                                    </div>
-                                    <div class="image span2 offset0">
-                                        <div class="circle">
-                                            <img src="view/images/iphone-5-lightning-charger.png" _cdn="true"/></div>
-                                    </div>
-                                </li>
-                                <li class="item item-left ">
-                                    <div class="desc span3 offset1">
-                                        <time>פברואר 2015</time>
-                                        <p>מעסיקים כבר 50 עובדים</p>
-                                    </div>
-                                    <div class="image span2 offset0">
-                                        <div class="circle">
-                                            <img src="view/images/technology-wallpaper-1920x1080.jpg" _cdn="true"/>
-                                        </div>
-                                    </div>
-                                    <div class="year">2015</div>
-                                </li>
-                                <li class="item item-right skip">
-                                    <div class="desc span3 offset0">
-                                        <time>אוקטובר 2014</time>
-                                        <p>הזמנה מספר 500 נכנסת לאתר</p>
-                                    </div>
-                                    <div class="image span3 offset0">
-                                        <div class="circle">
-                                            <img src="img/ipad-mini-blue-concept-01.png"/></div>
-                                    </div>
-                                </li>
-                                <li class="item item-left ">
-                                    <div class="desc span3 offset0">
-                                        <time>מאי 2014</time>
-                                        <p>התרחבנו</p>
-                                    </div>
-                                    <div class="image span3 offset0">
-                                        <div class="circle">
-                                            <img src="http://zeendo.com/info/wp-content/uploads/2013/01/online-shopping-5-639x296.jpg"
-                                                 _cdn="true"/></div>
-                                    </div>
-                                </li>
-                                <li class="item item-right skip">
-                                    <div class="image span2 offset1">
-                                        <div class="circle">
-                                            <img src="view/images/1-5M-Luxury-Metal-Braided-Mobile-Phone-Cables-Charging-USB-Cable-Charger-Data-For-iPhone-52.jpg"
-                                                 _cdn="true"/></div>
-                                    </div>
-                                    <div class="desc span3 offset0">
-                                        <time>ינואר 2013</time>
-                                        <p>הגענו לאלף לקוחות רשומים</p>
-                                    </div>
-                                    <div class="year">2013</div>
-                                </li>
-                                <li class="item item-left ">
+                        <button type="button" class="seq-next" aria-label="Next">
+                            <img src="images/next.svg" alt="Next"/>
+                        </button>
 
-                                    <div class="desc span3 offset0">
-                                        <time>מרץ 2013</time>
-                                        <p>הגענו לאלף לקוחות רשומים</p>
-                                    </div>
-                                    <div class="image span3 offset0">
-                                        <div class="circle">
-                                            <img src="http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/apigee-mobile-shopping-survey.jpg"
-                                                 _cdn="true"/>
-                                        </div>
-                                    </div>
-                                    >
-
-                                <li class="item item-left ">
-                                    <div class="image span3 offset0">
-                                        <div class="circle">
-                                            <img src="https://qph.ec.quoracdn.net/main-qimg-30ec914f1af4caf0caa1241f88f6756b?convert_to_webp=true"
-                                                 _cdn="true"/></div>
-                                    </div>
-                                    <div class="desc span3 offset0">
-                                        <time> 2012</time>
-                                        <p>All4Phone</p>
-                                        <p> נוסד באבן גבירול תל אביב כחנות צנועה למכירת אביזרים לסלולרי</p>
-                                    </div>
-                                </li>
-                            </ol>
-
-                        </div>
-                    </section>
-
-                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js" async></script>
-                    <div id="root_footer"></div>
+                    </fieldset>
                 </div>
 
 
-                <script lang="text/javascript">
+            </section>
+        </div>
+    </div>
 
-                    Moz.currentUser = {};
-                    Moz.config.pages = ["about_story"];
-                    Moz.config.dependencies = [];
-                    Moz.omniture = {
-                        "site_section": "about",
-                        "page_name": "moz.com\/about-index",
-                        "page_type": "",
-                        "events": "",
-                        "product": "",
-                        "coupon_code": "",
-                        "user_id": null,
-                        "user_level": null,
-                        "article_id": "",
-                        "subscription_id": ""
-                    };
+    <div class="row Cart">
+        <div class="col-lg-12 col-md-8 col-xs-4">
+            <section id="Cart" class="row content-filler2">
+                <h1>עגלת הקניות</h1>
+                <p>בחר מוצר להוסיף לעגלה</p>
+            </section>
 
-                    $(Moz.init);
+            <section class="row" style="">
+                <div class="fill-screen fixed-attachment"
+                     style="background-image: url(view/images/apple_46-wallpaper-1920x1080.jpg)">
 
-                </script>
+                    <main>
+                        <a href="#0" class="cd-add-to-cart" data-price="25.99">הוסף לעגלה</a>
+                    </main>
 
+                    <div class="cd-cart-container empty">
+                        <a href="#0" class="cd-cart-trigger">
+                            Cart
+                            <ul class="count"> <!-- cart items count -->
+                                <li>0</li>
+                                <li>0</li>
+                            </ul> <!-- .count -->
+                        </a>
 
-                <script type="text/javascript">
-                    var _qevents = _qevents || [];
+                        <div class="cd-cart">
+                            <div class="wrapper">
+                                <header>
+                                    <h2>Cart</h2>
+                                    <span class="undo">Item removed. <a href="#0">Undo</a></span>
+                                </header>
 
-                    (function () {
-                        var elem = document.createElement('script');
-                        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-                        elem.async = true;
-                        elem.type = "text/javascript";
-                        var scpt = document.getElementsByTagName('script')[0];
-                        scpt.parentNode.insertBefore(elem, scpt);
-                    })();
+                                <div class="body">
+                                    <ul>
+                                        <!-- products added to the cart will be inserted here using JavaScript -->
+                                    </ul>
+                                </div>
 
-                    _qevents.push(
-                            {qacct: "p-m6uWWu9N3_-aJ", labels: "_fp.event.About"}
-                    );
-                </script>
-                <noscript>
-                    <img src="//pixel.quantserve.com/pixel/p-m6uWWu9N3_-aJ.gif?labels=_fp.event.About"
-                         style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
-                </noscript>
-
-                <script type="text/javascript">
-
-                    var _gaq = _gaq || [];
-                    _gaq.push(['_setAccount', 'UA-1870679-1']);
-                    _gaq.push(['_setDomainName', 'moz.com']);
-                    _gaq.push(['_setAllowLinker', true]);
-                    _gaq.push(['_setAllowAnchor', true]);
-
-                    _gaq.push(['_setCustomVar', 5, 'User-Type', 'visitor', 2]);
+                                <footer>
+                                    <a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+                                </footer>
+                            </div>
+                        </div> <!-- .cd-cart -->
+                    </div> <!-- cd-cart-container -->
 
 
-                    _gaq.push(['_addIgnoredRef', 'seomoz.org']);
-                    _gaq.push(['_addIgnoredRef', 'moz.com']);
-                    _gaq.push(['_addIgnoredRef', 'opensiteexplorer.org']);
-                    _gaq.push(['_trackPageview']);
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <div class="row aboutus">
+        <div class="col-lg-12 col-md-8 col-xs-4">
+            <section id="AboutUs" class="row content-filler2">
+                <h1>עליינו</h1>
+                <p>קצת על ההיסטוריה שלנו</p>
+            </section>
+
+            <section class="row" style="">
+                <div class="fill-screen fixed-attachment"
+                     style="background-image: url(view/images/technology-wallpaper-1920x1080.jpg)">
+                    <link rel="alternate" type="application/rss+xml" title="RSS 2.0"
+                          href="http://feedpress.me/mozblog"/>
+                    <meta name="viewport" content="width=1200"/>
+                    <meta name="description"
+                          content="At Moz, we're making the web a better place&mdash;and loving every minute of it."/>
+
+                    <section class="about about-index  layout-default">
+                        <div id="root" class="no-overflow">
+                            <section class="background-blue sawtooth-top white timeline-section">
+                                <div class="container bubbles">
+                                    <h5 class="center darkblue inset-text">היום</h5>
+                                    <ol class="timeline row">
+                                        <li class="spine"></li>
+                                        <li class="item item-left ">
+                                            <div class="image span3 offset0">
+
+                                                <div class="circle">
+                                                    <img src="img/iphone-6-plus-reachability.jpg" _cdn="true"/></div>
+                                            </div>
+                                            <div class="desc span3 offset0">
+                                                <time>אוקטובר 2015</time>
+                                                <p>חוגגים 3 שנים ביחד </p>
+                                            </div>
+                                        </li>
+                                        <li class="item item-right skip">
+                                            <div class="desc span4 offset0">
+                                                <time>אפריל 2015</time>
+                                                <p>השקנו ליין חדש של מוצרים</p>
+                                            </div>
+                                            <div class="image span2 offset0">
+                                                <div class="circle">
+                                                    <img src="view/images/iphone-5-lightning-charger.png" _cdn="true"/>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item item-left ">
+                                            <div class="desc span3 offset1">
+                                                <time>פברואר 2015</time>
+                                                <p>מעסיקים כבר 50 עובדים</p>
+                                            </div>
+                                            <div class="image span2 offset0">
+                                                <div class="circle">
+                                                    <img src="view/images/technology-wallpaper-1920x1080.jpg"
+                                                         _cdn="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="year">2015</div>
+                                        </li>
+                                        <li class="item item-right skip">
+                                            <div class="desc span3 offset0">
+                                                <time>אוקטובר 2014</time>
+                                                <p>הזמנה מספר 500 נכנסת לאתר</p>
+                                            </div>
+                                            <div class="image span3 offset0">
+                                                <div class="circle">
+                                                    <img src="img/ipad-mini-blue-concept-01.png"/></div>
+                                            </div>
+                                        </li>
+                                        <li class="item item-left ">
+                                            <div class="desc span3 offset0">
+                                                <time>מאי 2014</time>
+                                                <p>התרחבנו</p>
+                                            </div>
+                                            <div class="image span3 offset0">
+                                                <div class="circle">
+                                                    <img src="http://zeendo.com/info/wp-content/uploads/2013/01/online-shopping-5-639x296.jpg"
+                                                         _cdn="true"/></div>
+                                            </div>
+                                        </li>
+                                        <li class="item item-right skip">
+                                            <div class="image span2 offset1">
+                                                <div class="circle">
+                                                    <img src="view/images/1-5M-Luxury-Metal-Braided-Mobile-Phone-Cables-Charging-USB-Cable-Charger-Data-For-iPhone-52.jpg"
+                                                         _cdn="true"/></div>
+                                            </div>
+                                            <div class="desc span3 offset0">
+                                                <time>ינואר 2013</time>
+                                                <p>הגענו לאלף לקוחות רשומים</p>
+                                            </div>
+                                            <div class="year">2013</div>
+                                        </li>
+                                        <li class="item item-left ">
+
+                                            <div class="desc span3 offset0">
+                                                <time>מרץ 2013</time>
+                                                <p>הגענו לאלף לקוחות רשומים</p>
+                                            </div>
+                                            <div class="image span3 offset0">
+                                                <div class="circle">
+                                                    <img src="http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/apigee-mobile-shopping-survey.jpg"
+                                                         _cdn="true"/>
+                                                </div>
+                                            </div>
+                                            >
+
+                                        <li class="item item-left ">
+                                            <div class="image span3 offset0">
+                                                <div class="circle">
+                                                    <img src="https://qph.ec.quoracdn.net/main-qimg-30ec914f1af4caf0caa1241f88f6756b?convert_to_webp=true"
+                                                         _cdn="true"/></div>
+                                            </div>
+                                            <div class="desc span3 offset0">
+                                                <time> 2012</time>
+                                                <p>All4Phone</p>
+                                                <p> נוסד באבן גבירול תל אביב כחנות צנועה למכירת אביזרים לסלולרי</p>
+                                            </div>
+                                        </li>
+                                    </ol>
+
+                                </div>
+                            </section>
 
 
-                    (function () {
-                        var ga = document.createElement('script');
-                        ga.type = 'text/javascript';
-                        ga.async = true;
-                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(ga, s);
-                    })();
-
-                </script>
+                            <div id="root_footer"></div>
+                        </div>
 
 
-                <script type="text/javascript">
-                    /* <![CDATA[ */
-                    var google_conversion_id = 992024495;
-                    var google_custom_params = window.google_tag_params;
-                    var google_remarketing_only = true;
-                    /* ]]> */
-                </script>
-                <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
-                <noscript>
-                    <div style="display:inline;">
-                        <img height="1" width="1" style="border-style:none;" alt=""
-                             src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/992024495/?value=0&guid=ON&script=0<http://googleads.g.doubleclick.net/pagead/viewthroughconversion/992024495/?value=0&guid=ON&script=0>"/>
-                    </div>
-                </noscript>
+                        <noscript>
+                            <img src="//pixel.quantserve.com/pixel/p-m6uWWu9N3_-aJ.gif?labels=_fp.event.About"
+                                 style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+                        </noscript>
 
 
-                <script language="text/javascript"></script>
-                <script type="text/javascript">
-                    var _kiq = _kiq || [];
+                        <noscript>
+                            <div style="display:inline;">
+                                <img height="1" width="1" style="border-style:none;" alt=""
+                                     src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/992024495/?value=0&guid=ON&script=0<http://googleads.g.doubleclick.net/pagead/viewthroughconversion/992024495/?value=0&guid=ON&script=0>"/>
+                            </div>
+                        </noscript>
 
 
-                    (function () {
-                        setTimeout(function () {
-                                    var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script');
-                                    s.type = 'text/javascript';
-                                    s.async = true;
-                                    s.src = '//s3.amazonaws.com/ki.js/52771/bm9.js';
-                                    f.parentNode.insertBefore(s, f);
-                                }
-                                , 1);
-                    })();
-                </script>
-                <script src="//assets.adobedtm.com/f80deb352e898ac28c0b38509ed18ce8ee22111e/satelliteLib-7bc7bd86922f7d6176087448ae61214793df0fe2.js"></script>
-                <script type="text/javascript">_satellite.pageBottom();</script>
+                    </section>
+                </div>
 
             </section>
         </div>
+    </div>
 
+    <div class="row contactUs">
+        <div class="col-lg-12 col-md-8 col-xs-4">
 
+            <section id="ContactUs" class="row content-filler3">
+                <h1>צור קשר</h1>
+                <p>פרטי התקשרות</p>
+            </section>
 
+            <section class="row" style="">
+                <div class="fill-screen fixed-attachment"
+                     style="background-image: url(view/images/organized-wallpaper-1920x1080.jpg)">
+                    <div class="container">
 
-        <section id="ContactUs" class="row content-filler3">
-            <h1>צור קשר</h1>
-            <p>פרטי התקשרות</p>
-        </section>
+                        <div class="row">
 
-        <section class="row" style="">
-            <div class="fill-screen fixed-attachment"
-                 style="background-image: url(view/images/organized-wallpaper-1920x1080.jpg)">
-                <div class="container">
-
-                    <div class="row">
-
-                        <div id="map-outer" class="col-xs-12 col-md-12">
-                            <div3 id="address" class="col-xs-4 col-md-4">
-                                <h2>המיקום שלנו</h2>
-                                <address>
-                                    <strong>ALL4PHONE</strong><br>
-                                    אבן גבירול , 701-704<br>
-                                    30123<br>
-                                    תל אביב<br>
-                                    ישראל<br>
-                                    <abbr>טל:</abbr> +972 041 240 5411
-                                </address>
-                            </div3>
-                            <div class="col-xs-8 col-md-8">
-                                <div id="map"></div>
-                                <style>#map {
-                                    width: 100%;
-                                    height: 100%;
-                                    margin-left: -35%;
-                                }</style>
-                            </div>
-                        </div><!-- /map-outer -->
-
-                    </div> <!-- /row -->
-                    <div class="row">
-                        <form class="form-horizontal" name="commentform">
-                            <div class="form-group">
-
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control" id="last_name" name="last_name"
-                                           style="text-align: right" placeholder="שם משפחה"/>
+                            <div id="map-outer" class="col-xs-12 col-md-12">
+                                <div3 id="address" class="col-xs-4 col-md-4">
+                                    <h2>המיקום שלנו</h2>
+                                    <address>
+                                        <strong>ALL4PHONE</strong><br>
+                                        אבן גבירול , 701-704<br>
+                                        30123<br>
+                                        תל אביב<br>
+                                        ישראל<br>
+                                        <abbr>טל:</abbr> +972 041 240 5411
+                                    </address>
+                                </div3>
+                                <div class="col-xs-8 col-md-8">
+                                    <div id="map"></div>
+                                    <style>#map {
+                                        width: 100%;
+                                        height: 100%;
+                                        margin-left: -35%;
+                                    }</style>
                                 </div>
-                                <div class="col-md-4">
-                                    <input type="text" class="form-control" id="first_name" name="first_name"
-                                           style="text-align: right" placeholder="שם"/>
+                            </div><!-- /map-outer -->
+
+                        </div> <!-- /row -->
+                        <div class="row">
+                            <form class="form-horizontal" name="commentform">
+                                <div class="form-group">
+
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="last_name" name="last_name"
+                                               style="text-align: right" placeholder="שם משפחה"/>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="first_name" name="first_name"
+                                               style="text-align: right" placeholder="שם"/>
+                                    </div>
+                                    <div class="col-md-4 input-group">
+                                        <span class="input-group-addon">@</span>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                               style="text-align: right" placeholder="אימייל"/>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 input-group">
-                                    <span class="input-group-addon">@</span>
-                                    <input type="email" class="form-control" id="email" name="email"
-                                           style="text-align: right" placeholder="אימייל"/>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="col-md-12">
                                     <textarea rows="6" class="form-control" id="comments" name="comments"
                                               style="text-align: right" placeholder="הערות \ בקשות"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-md-6">
-                                    <button type="submit" value="Submit" class="btn btn-warning pull-right">שלח</button>
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <button type="submit" value="Submit" class="btn btn-warning pull-right">שלח
+                                        </button>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div><!-- /row -->
-                </div><!-- /container -->
+                            </form>
+                        </div><!-- /row -->
+                    </div><!-- /container -->
 
 
-            </div>
+                </div>
 
 
-        </section>
+            </section>
+        </div>
+    </div>
 
 </div>
 
@@ -575,6 +447,7 @@ var map=null;
 <footer></footer>
 
 <!--<script src="App/BootStrapapp.js"></script>-->
+<script src="view/js/jquery-2.1.1.min.js"></script>
 <script src="view/js/bootstrap.min.js"></script>
 <script src="view/js/classie.js"></script>
 <script src="view/js/cbpAnimatedHeader.js"></script>
@@ -591,6 +464,11 @@ var map=null;
 <script src="scripts/sequence.min.js"></script>
 <script src="scripts/sequence-theme.mono.js"></script>
 <script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="view/js/aboutUs.js"></script>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js" async></script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+<script src="//assets.adobedtm.com/f80deb352e898ac28c0b38509ed18ce8ee22111e/satelliteLib-7bc7bd86922f7d6176087448ae61214793df0fe2.js"></script>
+<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 
 </html>

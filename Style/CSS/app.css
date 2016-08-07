@@ -76,8 +76,8 @@ body {
     border-radius:0;
 }
 
-.panel-dashboard{
-    background-color:#374862;
+.panel-dashboard {
+    background-color: brown;
 }
 
 .panel-dashboard .panel-heading{
@@ -88,7 +88,9 @@ body {
 
 .panel-dashboard .panel-footer, .panel-body{
     border:none;
-    background-color:#2F4256;
+    background-color: black;
+    background-color: aliceblue;
+
 }
 
 .sidebar-nav .ion {
