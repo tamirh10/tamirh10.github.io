@@ -22,7 +22,7 @@
                 .attr('width', 440)
                 .attr('height', 400);
             var pieGroup;
-            pieGroup = area.append('g').attr('transform', 'translate(220, 200)');
+            pieGroup = area.append('g').attr('transform', 'translate(200, 180)');
             //For Doughnut Chart
             var arc = d3.svg.arc()
                         .innerRadius(50)

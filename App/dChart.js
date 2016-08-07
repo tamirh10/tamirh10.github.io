@@ -64,33 +64,3 @@ nv.addGraph(function() {
 
 });
 
-var chart2;
-nv.addGraph(function() {
-    var chart2 = nv.models.pieChart()
-        .x(function(d) { return d.key })
-        .y(function(d) { return d.y })
-        //.labelThreshold(.08)
-        //.showLabels(false)
-        .color(d3.scale.category20().range().slice(10))
-        .width(width)
-        .height(height)
-        .donut(true)
-        .id('donut2')
-        .titleOffset(-30)
-        .title("woot");
-
-    // MAKES IT HALF CIRCLE
-    chart2.pie
-        .startAngle(function(d) { return d.startAngle/2 -Math.PI/2 })
-        .endAngle(function(d) { return d.endAngle/2 -Math.PI/2 });
-
-    d3.select("#test2")
-    //.datum(historicalBarChart)
-        .datum(testdata)
-        .transition().duration(1200)
-        .call(chart2);
-
-    return chart2;
-});
-
-
